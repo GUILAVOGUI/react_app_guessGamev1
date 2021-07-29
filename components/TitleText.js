@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Platform } from 'react-native';
 
 
 const TitleText = props => <Text style={{ ...styles.title, ...props.style }}>
@@ -9,7 +9,7 @@ const TitleText = props => <Text style={{ ...styles.title, ...props.style }}>
 const styles = StyleSheet.create({
 
     title: {
-        fontFamily: 'Cochin',
+        fontFamily: (Platform.OS === 'ios') ? 'Zapfino' : 'Roboto',
         fontWeight: 'bold',
         fontSize: 27,
     }

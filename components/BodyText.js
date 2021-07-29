@@ -9,7 +9,7 @@ const BodyText = props => <Text style={{ ...styles.body, ...props.style }}>
 const styles = StyleSheet.create({
 
     body: {
-        fontFamily: 'Thonburi-Bold',
+        fontFamily: 'normal',
         fontWeight: 'bold',
         fontSize: 19
     }
