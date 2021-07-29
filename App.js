@@ -25,7 +25,13 @@ export default function App() {
   const [dataLoaded, setDataLoaded] = useState(false);
 
 
-
+  // if (!dataLoaded) {
+  //   return (
+  //     <AppLoading startAsync={fetchFonts} onFinish={() => setDataLoaded(true)}
+  //       onError={(err) => console.log(err)}
+  //     />
+  //   );
+  // }
 
 
 
@@ -47,24 +53,24 @@ export default function App() {
   }
   let content = <StartGameScreen onStartGame={startGameHandler} />
 
+  // content = (
+  //   <GameOverScreen
+  //     roundsNumber={1}
+  //     onRestart={configureNewGameHandler} />
+  // )
+
   if (userNumber && guessRounds <= 0) {
     content = <GameScreen userChoice={userNumber} onGameOver={gameOverHandler} />
   } else if (guessRounds > 0) {
     content = <GameOverScreen userNumber={userNumber} roundsNumber={guessRounds} onRestart={configureNewGameHandler} />
   }
 
-  // if (!dataLoaded) {
-  //   return (
-  //     <AppLoading startAsync={fetchFonts} onFinish={() => setDataLoaded(true)}
-  //       onError={(err) => console.log(err)}
-  //     />
-  //   );
-  // }
+
   return (
 
     <View style={styles.screen} >
 
-      <Header title="Gues a Number " />
+      <Header title="Guess Number Game " />
       {content}
     </View>
 

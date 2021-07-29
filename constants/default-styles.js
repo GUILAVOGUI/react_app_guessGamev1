@@ -5,11 +5,11 @@ import { View, StyleSheet, Text } from 'react-native';
 
 export default StyleSheet.create({
     bodyText: {
-        fontFamily: 'sans-serif-condensed',
+        fontFamily: 'American Typewriter',
         color: 'red'
     },
     title: {
-        fontFamily: 'sans-serif-thin',
+        fontFamily: 'AlNile-Bold',
         fontSize: 18
     }
 });

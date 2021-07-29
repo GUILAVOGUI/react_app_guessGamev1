@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo/vector-icons": "^12.0.5",
     "@unimodules/core": "^7.1.1",
     "expo": "^41.0.1",
     "expo-font": "^9.2.1",

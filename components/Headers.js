@@ -9,7 +9,6 @@ const Header = props => {
         <View style={styles.header}>
             <TitleText style={styles.headerText}>
                 {props.title}
-
             </TitleText>
         </View>
     )
@@ -26,7 +25,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     headerText: {
-        color: 'white'
+        color: 'white',
+        fontFamily: 'Helvetica'
     }
 
 
