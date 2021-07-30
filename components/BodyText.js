@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Platform } from 'react-native';
 
 
 const BodyText = props => <Text style={{ ...styles.body, ...props.style }}>
@@ -9,7 +9,7 @@ const BodyText = props => <Text style={{ ...styles.body, ...props.style }}>
 const styles = StyleSheet.create({
 
     body: {
-        fontFamily: 'normal',
+        fontFamily: Platform.OS === 'android' ? 'normal' : 'Arial',
         fontWeight: 'bold',
         fontSize: 19
     }

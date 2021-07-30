@@ -2,6 +2,7 @@ import React from 'react';
 import {
     View, StyleSheet, Text, Button, Image, Dimensions
     , ScrollView
+
 } from 'react-native';
 
 import BodyText from '../components/BodyText';
@@ -10,8 +11,10 @@ import Colors from '../constants/colors';
 import MainButton from '../components/MainButton';
 
 
+
 const GameOverScreen = props => {
     return (
+
         <ScrollView>
 
             <View style={styles.screen}>
@@ -46,6 +49,9 @@ const GameOverScreen = props => {
                 </MainButton>
             </View>
         </ScrollView>
+
+
+
 
     )
 
